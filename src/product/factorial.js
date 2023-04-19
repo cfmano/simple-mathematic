@@ -1,9 +1,9 @@
 export function factorial(n) {
-  if (n < 0) {
-    return Number.NaN;
-  }
-  else if (n > 170) {
+  if (n > 170) {
     return Infinity;
+  }
+  else if (n < 0 || n % 1 !== 0) {
+    return Number.NaN;
   }
   else {
     let result = 1;

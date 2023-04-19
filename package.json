@@ -1,14 +1,27 @@
 {
   "name": "simple-mathematic",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Simple & efficient implementation of common mathematic functions unavailable in Math module",
+  "keywords": [
+    "mathematics",
+    "math",
+    "javascript"
+  ],
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vitest run --coverage"
   },
   "author": {
     "name": "cfmano",
     "email": "cfmano@gmail.com"
   },
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cfmano/simple-mathematic"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@vitest/coverage-c8": "^0.30.1",
+    "vitest": "^0.30.1"
+  }
 }
