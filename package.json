@@ -1,6 +1,6 @@
 {
   "name": "simple-mathematic",
-  "version": "0.1.0-actions-test",
+  "version": "0.1.0",
   "description": "Simple & efficient implementation of common mathematic functions unavailable in Math module",
   "keywords": [
     "mathematics",
