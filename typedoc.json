@@ -1,0 +1,14 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/tsdoc/v0/tsdoc.schema.json",
+    "plugin": [ "typedoc-plugin-katex" ],
+    "katex": {
+        "options": {
+            "delimiters": [
+                { "left": "$$",  "right": "$$",  "display": true },
+                { "left": "$",   "right": "$",   "display": false },
+                { "left": "\\(", "right": "\\)", "display": false },
+                { "left": "\\[", "right": "\\]", "display": true }
+            ]
+        }
+    }
+}

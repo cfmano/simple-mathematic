@@ -1,6 +1,7 @@
 import { assert, describe, expect, it } from 'vitest';
 import { factorial } from './factorial';
 
+
 describe('Factorial function ', () => {
   it ('checks call with empty set of params', () => {
     assert.isNaN(factorial());
@@ -9,7 +10,7 @@ describe('Factorial function ', () => {
   it('checks incorrect input numbers', () => {
     assert.isNaN(factorial(-2));
     assert.isNaN(factorial(20.52));
-    assert.equal(factorial(Infinity), Infinity);
+    assert.isNaN(factorial(Infinity));
   });
 
   it('checks correct summation of correctly input numbers', () => {

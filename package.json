@@ -1,6 +1,6 @@
 {
   "name": "simple-mathematic",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Simple & efficient implementation of common mathematic functions unavailable in Math module",
   "keywords": [
     "mathematics",
@@ -15,6 +15,7 @@
   ],
   "scripts": {
     "build": "vite build",
+    "docs": "typedoc --plugin typedoc-plugin-katex src/ --out docs/",
     "test": "vitest run --coverage"
   },
   "author": {
@@ -29,6 +30,8 @@
   "devDependencies": {
     "@types/node": "^18.15.12",
     "@vitest/coverage-c8": "^0.30.1",
+    "typedoc": "^0.24.6",
+    "typedoc-plugin-katex": "^0.1.2",
     "typescript": "^5.0.4",
     "vite": "^4.3.0",
     "vite-plugin-dts": "^2.3.0",
