@@ -6,7 +6,9 @@
  * and in practise is used very often.
  * 
  * Usage of the function is heavily inspired by ECMAScript's native Math module functions,
- * like Math.min and Math.max. Therefore it takes optional amount of numerical arguments passed
+ * like [Math.min](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/min)
+ * and [Math.max](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max).
+ * Therefore it takes optional amount of numerical arguments passed
  * and tries to efficiently proceed with computation of summation. Be aware that passing any
  * non-numerical argument may cause unexpected results, as JS "plus" operator works as both -
  * addition operator as well as string concatenation operator with virtually any type of variables.

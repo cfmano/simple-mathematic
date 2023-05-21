@@ -1,12 +1,14 @@
 /**
- * Function product mulitplies all numbers passed as standalone arguments and returns their product.
+ * Function product multiplies all numbers passed as standalone arguments and returns their product.
  * 
  * @remarks
  * The product function is mathematically defined as the multiplication of sequence of any kind of numbers
- * and in practise is used very often.
+ * and in practise is very often used.
  * 
  * Usage of the function is heavily inspired by ECMAScript's native Math module functions,
- * like Math.min and Math.max. Therefore it takes optional amount of numerical arguments passed
+ * like [Math.min](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/min)
+ * and [Math.max](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max).
+ * Therefore it takes optional amount of numerical arguments passed
  * and tries to efficiently proceed with computation of multiplication. Be aware that passing any
  * non-numerical argument may cause unexpected results, as JS internally tries to convert all arguments
  * into numbers. Therefore incorrectly formatted strings could cause returning `NaN` values.
