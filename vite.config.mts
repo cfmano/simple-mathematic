@@ -19,9 +19,12 @@ export default defineConfig({
   },
   plugins: [
     biome({
-      files: 'src'
+      files: 'src',
     }),
-    dts(),
+    dts({
+      entryRoot: 'src',
+      exclude: "**/*.test.ts",
+    }),
   ],
   test: {
     globals: true,

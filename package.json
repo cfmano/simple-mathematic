@@ -1,6 +1,6 @@
 {
   "name": "simple-mathematic",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Simple & efficient implementation of common mathematic functions unavailable in Math module",
   "keywords": [
     "mathematics",
@@ -24,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/cfmano/simple-mathematic"
+    "url": "git+https://github.com/cfmano/simple-mathematic.git"
   },
   "homepage": "https://cfmano.github.io/simple-mathematic/",
   "license": "ISC",

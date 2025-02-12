@@ -1,7 +1,8 @@
-import { test, describe, expect } from 'vitest';
-import { circleArea } from './circle';
+import { test, describe, expect } from "vitest";
+import { circleArea } from "./circle";
 
 describe("Circle area should be calculated correctly", () => {
+	// biome-ignore format: the array should not be formatted
 	const cases = [
 		[0,  0              ],
 		[1,  Math.PI        ],
@@ -11,6 +12,6 @@ describe("Circle area should be calculated correctly", () => {
 	]
 
 	test.each(cases)("given radius of %p should return area of %p", (radius, result) => {
-		expect(circleArea(radius)).toBe(result)
-	})
-})
+		expect(circleArea(radius)).toBe(result);
+	});
+});
