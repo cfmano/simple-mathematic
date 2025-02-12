@@ -11,6 +11,13 @@ This library consists of common mathematic functions unavailable in Math module.
   - [Odd](https://cfmano.github.io/simple-mathematic/functions/isOdd.html)
 - [Triangle number](https://cfmano.github.io/simple-mathematic/functions/sum.html)
 - [Factorial](https://cfmano.github.io/simple-mathematic/functions/factorial.html)
+- Geometry
+  - Area calculations
+    - [Circle area](https://cfmano.github.io/simple-mathematic/functions/circleArea.html)
+    - [Ellipse area](https://cfmano.github.io/simple-mathematic/functions/ellipseArea.html)
+  - Angle value conversions
+    - [Degrees to radians conversion](https://cfmano.github.io/simple-mathematic/functions/degreesToRadians.html)
+    - [Radians to degrees conversion](https://cfmano.github.io/simple-mathematic/functions/radiansToDegrees.html)
 
 ## Usage
 
@@ -18,7 +25,9 @@ This library consists of common mathematic functions unavailable in Math module.
 
 Installing `simple-mathematic` as [npm package](https://www.npmjs.com/package/simple-mathematic):
 
-    npm install simple-mathematic
+```bash
+npm install simple-mathematic
+```
 
 The aim of the package is to use functions in the same manner as we would do with native built-in JavaScript's Math module:
 

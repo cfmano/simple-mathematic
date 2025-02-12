@@ -31,10 +31,10 @@ describe('Parity check functions', () => {
   });
 
   it ('checks correct assertions of non-integer numbers', () => {
-    assert.isFalse(isEven(Infinity));
-    assert.isFalse(isEven(NaN));
+    assert.isFalse(isEven(Number.POSITIVE_INFINITY));
+    assert.isFalse(isEven(Number.NaN));
 
-    assert.isFalse(isOdd(Infinity));
-    assert.isFalse(isOdd(NaN));
+    assert.isFalse(isOdd(Number.POSITIVE_INFINITY));
+    assert.isFalse(isOdd(Number.NaN));
   });
 });

@@ -40,13 +40,13 @@ export function factorial(n: number): number {
   if (n < 0 || n % 1 !== 0) {
     return Number.NaN;
   }
-  else if (n > 170) {
-    return Infinity;
+
+  if (n > 170) {
+    return Number.POSITIVE_INFINITY;
   }
-  else {
-    let result = 1;
-    for (let i=1; i<=n;i++) 
-        result *= i;
-    return result;
-  }
+
+  let result = 1;
+  for (let i=1; i<=n;i++) 
+      result *= i;
+  return result;
 }

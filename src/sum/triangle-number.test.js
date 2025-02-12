@@ -10,7 +10,7 @@ describe('Triangle numbers function ', () => {
     assert.isNaN(triangleNumber(0));
     assert.isNaN(triangleNumber(-2));
     assert.isNaN(triangleNumber(20.52));
-    assert.isNaN(triangleNumber(Infinity));
+    assert.isNaN(triangleNumber(Number.POSITIVE_INFINITY));
   });
 
   it('checks correct summation of correctly input numbers', () => {

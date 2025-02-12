@@ -1,5 +1,6 @@
-import { defineConfig } from 'vite';
+import { defineConfig } from 'vitest/config';
 import dts from 'vite-plugin-dts';
+import biome from 'vite-plugin-biome';
 
 export default defineConfig({
   build: {
@@ -16,5 +17,17 @@ export default defineConfig({
       },
     },
   },
-  plugins: [ dts() ],
+  plugins: [
+    biome({
+      files: 'src'
+    }),
+    dts(),
+  ],
+  test: {
+    globals: true,
+    coverage: {
+      provider: 'v8',
+      include: [ 'src/**/*' ],
+    }
+  },
 });

@@ -9,8 +9,8 @@ describe('Sum function ', () => {
   it ('checks correct summation over single set parameter', () => {
     assert.equal(sum(0), 0);
     assert.equal(sum(1), 1);
-    assert.isNaN(sum(NaN));
-    assert.equal(sum(Infinity), Infinity);
+    assert.isNaN(sum(Number.NaN));
+    assert.equal(sum(Number.POSITIVE_INFINITY), Number.POSITIVE_INFINITY);
   });
 
   it('checks correct summation over set of multiple params', () => {
@@ -20,7 +20,7 @@ describe('Sum function ', () => {
     assert.equal(sum(Number.MAX_SAFE_INTEGER, Number.MAX_SAFE_INTEGER), 1.8014398509481982e+16);
     assert.equal(sum(Number.MAX_SAFE_INTEGER, Number.MIN_SAFE_INTEGER), 0);
     assert.equal(sum(Number.MIN_SAFE_INTEGER, Number.MIN_SAFE_INTEGER), -1.8014398509481982e+16);
-    assert.equal(sum(Infinity, Infinity), Infinity);
-    assert.isNaN(sum(Infinity, -Infinity));
+    assert.equal(sum(Number.POSITIVE_INFINITY, Number.POSITIVE_INFINITY), Number.POSITIVE_INFINITY);
+    assert.isNaN(sum(Number.POSITIVE_INFINITY, Number.NEGATIVE_INFINITY));
   });
 });

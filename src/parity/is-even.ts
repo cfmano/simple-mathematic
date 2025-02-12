@@ -7,7 +7,7 @@
  * when passed number is really Even.
  *
  * @example
- * Basic usage of checking parinty by `isEven` function:
+ * Basic usage of checking parity by `isEven` function:
  *
  * ```ts
  * import { isEven } from 'simple-mathematic';

@@ -10,7 +10,7 @@ describe('Factorial function ', () => {
   it('checks incorrect input numbers', () => {
     assert.isNaN(factorial(-2));
     assert.isNaN(factorial(20.52));
-    assert.isNaN(factorial(Infinity));
+    assert.isNaN(factorial(Number.POSITIVE_INFINITY));
   });
 
   it('checks correct summation of correctly input numbers', () => {
@@ -20,7 +20,7 @@ describe('Factorial function ', () => {
     assert.equal(factorial(5), 120);
     assert.equal(factorial(100), 9.33262154439441e+157);
     assert.equal(factorial(170), 7.257415615307994e+306);
-    assert.equal(factorial(171), Infinity);
-    assert.equal(factorial(Number.MAX_SAFE_INTEGER), Infinity);
+    assert.equal(factorial(171), Number.POSITIVE_INFINITY);
+    assert.equal(factorial(Number.MAX_SAFE_INTEGER), Number.POSITIVE_INFINITY);
   });
 });

@@ -9,8 +9,8 @@ describe('Product function ', () => {
   it ('checks correct multiplication over single set parameter', () => {
     assert.equal(product(0), 0);
     assert.equal(product(1), 1);
-    assert.isNaN(product(NaN));
-    assert.equal(product(Infinity), Infinity);
+    assert.isNaN(product(Number.NaN));
+    assert.equal(product(Number.POSITIVE_INFINITY), Number.POSITIVE_INFINITY);
   });
 
   it('checks correct multiplication over set of multiple params', () => {
@@ -21,6 +21,6 @@ describe('Product function ', () => {
     assert.equal(product(Number.MAX_SAFE_INTEGER, Number.MAX_SAFE_INTEGER), 8.112963841460666e+31);
     assert.equal(product(Number.MAX_SAFE_INTEGER, Number.MIN_SAFE_INTEGER), -8.112963841460666e+31);
     assert.equal(product(Number.MIN_SAFE_INTEGER, Number.MIN_SAFE_INTEGER), 8.112963841460666e+31);
-    assert.equal(product(Infinity, -Infinity), -Infinity);
+    assert.equal(product(Number.POSITIVE_INFINITY, Number.NEGATIVE_INFINITY), Number.NEGATIVE_INFINITY);
   });
 });
